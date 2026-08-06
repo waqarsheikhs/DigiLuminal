@@ -24,5 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
     status.textContent = 'Thanks — your message is ready. Connect this form to your email service to receive inquiries.';
     form.reset();
   });
+
   document.querySelectorAll('[data-year]').forEach((item) => item.textContent = new Date().getFullYear());
 });
