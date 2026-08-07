@@ -13,9 +13,16 @@
     <div class="container">
       <nav class="nav">
         <a class="brand" href="index.html">
-          <span class="mark"><i></i></span>
+          <span class="mini-logo">
+            <svg viewBox="0 0 72 72" aria-hidden="true">
+              <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#67f7ff"/><stop offset="55%" stop-color="#9b79ff"/><stop offset="100%" stop-color="#ff6fcf"/></linearGradient></defs>
+              <circle cx="36" cy="36" r="30" fill="url(#g)" class="logo-spin"/>
+              <circle cx="36" cy="36" r="9" fill="#05060a" class="logo-dot"/>
+            </svg>
+          </span>
           <span>DigiLuminal<small>Creative Software & AI Studio</small></span>
         </a>
+        <button class="menu-toggle button-ghost" aria-label="Toggle menu">☰</button>
         <div class="nav-links">
           <a href="index.html">Home</a>
           <a href="services.html">Services</a>
@@ -32,14 +39,25 @@
       <div class="container reveal">
         <span class="eyebrow">Portfolio</span>
         <h1>Selected <span class="accent">Work</span></h1>
-        <p class="lead">This page needs to feel like a bento gallery, not a row of same-sized rectangles. Each card is designed to react on hover with zoom, glow, and lift.</p>
+        <p class="lead">This page now behaves like a horizontal gallery — cards are equal in size, easier to scan, and respond more strongly on hover.</p>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" data-slider>
       <div class="container">
-        <div class="portfolio-grid">
-          <article class="project wide reveal" data-project="motion">
+        <div class="section-head reveal">
+          <div>
+            <p class="label">Featured work</p>
+            <h2>Visual stories with a sharper edge.</h2>
+          </div>
+          <div class="hero-actions" style="margin-top:0;">
+            <button class="button-ghost" data-prev>← Prev</button>
+            <button class="button-ghost" data-next>Next →</button>
+          </div>
+        </div>
+
+        <div class="portfolio-grid reveal">
+          <article class="project wide" data-project="motion">
             <img class="project-media" src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1600&q=85" alt="Motion brand identity">
             <div class="project-copy">
               <p class="tag">Motion brand system</p>
@@ -49,7 +67,7 @@
             </div>
           </article>
 
-          <article class="project tall reveal" data-project="web">
+          <article class="project tall" data-project="web">
             <img class="project-media" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=85" alt="Premium business website">
             <div class="project-copy">
               <p class="tag">Website design</p>
@@ -59,7 +77,7 @@
             </div>
           </article>
 
-          <article class="project medium reveal" data-project="ai">
+          <article class="project medium" data-project="ai">
             <img class="project-media" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=85" alt="AI support concept">
             <div class="project-copy">
               <p class="tag">Automation</p>
@@ -69,17 +87,17 @@
             </div>
           </article>
 
-          <article class="project small reveal" data-project="motion">
+          <article class="project small" data-project="motion">
             <img class="project-media" src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=1600&q=85" alt="Graphic design artwork">
             <div class="project-copy"><p class="tag">Graphic design</p><h3>Campaign art</h3></div>
           </article>
 
-          <article class="project small reveal" data-project="web">
+          <article class="project small" data-project="web">
             <img class="project-media" src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=85" alt="Office support concept">
             <div class="project-copy"><p class="tag">Operations</p><h3>Backend support system</h3></div>
           </article>
 
-          <article class="project wide reveal" data-project="ai">
+          <article class="project wide" data-project="ai">
             <img class="project-media" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=85" alt="AI and digital interface concept">
             <div class="project-copy">
               <p class="tag">AI voice bot</p>
