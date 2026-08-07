@@ -13,9 +13,16 @@
     <div class="container">
       <nav class="nav">
         <a class="brand" href="index.html">
-          <span class="mark"><i></i></span>
+          <span class="mini-logo">
+            <svg viewBox="0 0 72 72" aria-hidden="true">
+              <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#67f7ff"/><stop offset="55%" stop-color="#9b79ff"/><stop offset="100%" stop-color="#ff6fcf"/></linearGradient></defs>
+              <circle cx="36" cy="36" r="30" fill="url(#g)" class="logo-spin"/>
+              <circle cx="36" cy="36" r="9" fill="#05060a" class="logo-dot"/>
+            </svg>
+          </span>
           <span>DigiLuminal<small>Creative Software & AI Studio</small></span>
         </a>
+        <button class="menu-toggle button-ghost" aria-label="Toggle menu">☰</button>
         <div class="nav-links">
           <a href="index.html">Home</a>
           <a href="services.html">Services</a>
@@ -38,7 +45,7 @@
 
     <section class="section">
       <div class="container contact-grid">
-        <div class="glass-panel reveal">
+        <div class="glass-panel reveal" style="padding:28px;">
           <p class="label">Direct lines</p>
           <h2>Start here.</h2>
           <p class="content-muted">Email: hello@digiluminal.com<br>WhatsApp: +60 XXX-XXXXXXX<br>Location: Malaysia / Remote</p>
@@ -51,14 +58,8 @@
         </div>
 
         <form class="form reveal" data-contact-form>
-          <div class="field">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" placeholder="Your name">
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="Your email">
-          </div>
+          <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name"></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="Your email"></div>
           <div class="field">
             <label for="service">Project type</label>
             <select id="service" name="service">
@@ -71,10 +72,7 @@
               <option>AI Voice Bots</option>
             </select>
           </div>
-          <div class="field">
-            <label for="message">Project details</label>
-            <textarea id="message" name="message" rows="6" placeholder="Tell us what you need..."></textarea>
-          </div>
+          <div class="field"><label for="message">Project details</label><textarea id="message" name="message" rows="6" placeholder="Tell us what you need..."></textarea></div>
           <button type="submit" class="button primary" style="width:100%;">Send inquiry ↗</button>
           <div class="form-status content-muted" aria-live="polite"></div>
         </form>
